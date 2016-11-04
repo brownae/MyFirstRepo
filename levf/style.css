@@ -1,0 +1,293 @@
+
+
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* ----Site wide styles----START */
+
+body {
+    max-width: 960px;
+    margin: auto;
+    background: url(images/12_col.gif) center repeat-y;
+    padding: 0 10px;
+    border: 1px solid blue;
+} 
+
+/* typography - START */
+h1 a span {
+    display: none;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 3em;
+    color: #000;
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 2.25em;
+    color: #000;
+}
+
+h4 {
+    font-family: Arial;
+    font-size: 1.5em;
+    color: #000;
+}
+
+p {
+    font-family: Arial;
+    font-size: 1em;
+    color: #000;
+}
+/* typography - END */
+
+
+
+/* anchors-START */
+
+a:link,
+a:visited {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+   color: #D73C4C;
+}
+
+a h1,
+a h2,
+a h3,
+a h4 {
+    font-style: normal;
+}
+
+a h1:hover,
+a h2:hover,
+a h3:hover,
+a h4:hover,
+a h1:focus,
+a h2:focus,
+a h3:focus,
+a h4:focus
+{
+    color: #D73C4C;
+}
+/* anchors-END */
+
+b {
+    font-weight: bold;
+    font-weight: 600;
+}
+
+i {
+    font-weight: 400;
+    font-style: italic;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+    font-weight: 600;
+}
+
+blockquote {
+    color: #555;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-weight: 600;
+    margin: .5em 10px;
+    padding: 0.5em 10px;
+}
+
+ul {
+    padding: 0px 10px 10px 25px;
+}
+
+ol {
+    padding: 0px 10px 10px 25px;
+}
+
+li {
+    padding: 7px 0;
+    font-family: Arial, sans-serif;
+    color: #555;    
+}
+
+dl {
+    padding: 0.5em;
+  }
+
+dt {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #555;
+  }
+
+dt:after {
+    content: ":";
+  }
+
+dd {
+    margin: 5px 0 5px 15px;
+    padding: 0 0 0.5em 0;
+    font-family: Arial, sans-serif;
+    color: #555;
+  }
+
+/* ----Site wide styles----END */
+
+/* ----Header styles----START */
+
+header h1 {
+    width: 38.5%;
+    float: left;
+}
+
+#dnt-btn{
+    float: right;
+    margin: 18px 29px 0 0;
+}
+
+#search-bx {
+    float: right;
+    clear: right;
+    margin: 45px 45px 0 0;
+}
+
+.main-nav {
+    clear: both;  
+}
+
+nav.main-nav ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav.main-nav ul li {
+    list-style: none;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+}
+
+
+
+nav.main-nav ul li ul li{
+    display: none;
+}
+
+
+/* ----Header styles----END */
+
+/* ----Home page styles----START */
+
+#logo-main {
+    margin: 10px 0 0 20px;
+    width: 100%;
+}
+
+div.seo h2 {
+    text-align: center;
+}
+
+div.seo {
+   width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cta-content {
+    position: absolute;
+    z-index: 1000;
+    height: 34%;
+    width: 90%;
+    bottom: 4px;
+    background: rgba(113,113,113,0.4);
+    padding: 2% 5%;
+}
+
+#cta-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cta {
+    max-width: 300px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: 10px;
+}
+
+.cta img {
+    width: 100%;
+}
+
+/* ----Home page styles----END */
+
+
+
+@media all and (max-width: 790px) {
+
+    
+/* ----Home page styles----START */
+#cta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.cta {
+    margin: 10px 0;
+    } 
+    
+/* ----Home page styles----END */
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
