@@ -103,7 +103,7 @@ slider.start();
         <img class="cta-img" src="images/cta-pic1.jpg" alt="">
         <div class="cta-content">
         <h3>Headline 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
         </div>
     </div>
     
@@ -111,7 +111,7 @@ slider.start();
         <img class="cta-img" src="images/cta-pic2.jpg" alt="">
         <div class="cta-content">
         <h3>Headline 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p></p>
         </div>
     </div>
     
@@ -119,7 +119,7 @@ slider.start();
         <img class="cta-img" src="images/cta-pic3.jpg" alt="">
         <div class="cta-content">
         <h3>Headline 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p></p>
         </div>
     </div>
     </div>
