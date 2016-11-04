@@ -1,6 +1,3 @@
-
-
-
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -63,42 +60,6 @@ p {
     color: #000;
 }
 /* typography - END */
-
-
-
-/* anchors-START */
-
-a:link,
-a:visited {
-    color: #000;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-   color: #D73C4C;
-}
-
-a h1,
-a h2,
-a h3,
-a h4 {
-    font-style: normal;
-}
-
-a h1:hover,
-a h2:hover,
-a h3:hover,
-a h4:hover,
-a h1:focus,
-a h2:focus,
-a h3:focus,
-a h4:focus
-{
-    color: #D73C4C;
-}
-/* anchors-END */
 
 b {
     font-weight: bold;
@@ -168,6 +129,7 @@ dd {
 
 /* ----Header styles----START */
 
+
 header h1 {
     width: 38.5%;
     float: left;
@@ -183,50 +145,241 @@ header h1 {
     clear: right;
     margin: 45px 45px 0 0;
 }
-
-.main-nav {
-    clear: both;  
+#logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size:20px;
+    line-height: 60px;
 }
-
-nav.main-nav ul {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav.main-nav ul li {
-    list-style: none;
-    font-size: 1.5em;
-    font-family: Arial, sans-serif;
-}
-
-
-
-nav.main-nav ul li ul li{
+/*----CP starts here --- */
+.toggle,
+[id^=drop] {
     display: none;
 }
 
+/* Giving a background-color to the nav container. */
+nav {
+    margin:0;
+    padding: 0;
+    background-color: #254441;
+}
 
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: right;
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display:inline-block;
+    float: left;
+    background-color: #254441;
+}
+
+/* Styling the links */
+nav a {
+    display:block;
+    padding:14px 20px;
+    color:#FFF;
+    font-size:17px;
+    text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover {
+    background-color: #000000;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top:-60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left:170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        background-color: #254441;
+        padding:14px 20px;
+        color:#FFF;
+        font-size:17px;
+        text-decoration:none;
+        border:none;
+    }
+
+    .toggle:hover {
+        background-color: #000000;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: #000000;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a{
+        padding:14px 20px;
+        color:#FFF;
+        font-size:17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #212121;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position:static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display:block;
+        width: 94%;
+    }
+}
+/*----CP ends here --- */
 /* ----Header styles----END */
 
 /* ----Home page styles----START */
 
 #logo-main {
     margin: 10px 0 0 20px;
-    width: 100%;
 }
 
 div.seo h2 {
     text-align: center;
 }
-
 div.seo {
    width: 90%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
 .cta-content {
     position: absolute;
     z-index: 1000;
@@ -236,12 +389,10 @@ div.seo {
     background: rgba(113,113,113,0.4);
     padding: 2% 5%;
 }
-
 #cta-row {
     display: flex;
     justify-content: space-around;
 }
-
 .cta {
     max-width: 300px;
     position: relative;
@@ -249,35 +400,320 @@ div.seo {
     z-index: 1;
     margin: 10px;
 }
-
 .cta img {
     width: 100%;
 }
-
 /* ----Home page styles----END */
-
-
-
 @media all and (max-width: 790px) {
-
-    
 /* ----Home page styles----START */
 #cta-row {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-    
 .cta {
     margin: 10px 0;
-    } 
-    
+    }
+}
 /* ----Home page styles----END */
-    
-    
-    
-    
-    
+.footer-gray {
+    background-color: #EFEFEF;
+    width: 100%;
+}
+
+.footer-custom {
+    color: #888;
+    font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    max-width: 1008px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.footer-custom:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.footer-lists:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.ftr-hdr {
+    color: #000;
+    font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
+    margin: 1em 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .ftr-hdr {
+        font-size: 18px;
+    }
+}
+
+.footer-list-wrap {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 568px) {
+    .footer-list-wrap {
+        width: 33.3333%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-list-wrap {
+        width: 25%;
+    }
+}
+
+.ftr-links-sub {
+    padding: 0;
+    margin: 0;
+}
+
+.ftr-links-sub:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.ftr-links-sub li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px 0;
+    color: #888;
+    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    /*width: 150px;*/
+}
+
+.footer-custom a,
+.footer-custom a:link,
+.footer-custom a:visited,
+.ftr-links-sub li .link {
+    text-decoration: none;
+    color: #888;
+    padding: 5px 0;
+    display: block;
+}
+
+.footer-custom .footer-legal a {
+    display: inline;
+}
+
+.footer-custom a:hover,
+.footer-custom a:active,
+.ftr-links-sub li .link:hover {
+    text-decoration: underline;
+    color: #888;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-custom a,
+    .footer-custom a:link,
+    .footer-custom a:visited,
+    .ftr-links-sub li .link {
+        padding: 0;
+    }
+}
+
+
+/* BEGIN EMAIL CAPTURE STYLES*/
+
+.footer-email {
+    text-align: center;
+}
+
+#ftrEmailForm {
+    height: 44px;
+}
+
+#ftrEmailForm .error {
+    display: none;
+    color: red;
+    text-align: left;
+}
+
+#ftrEmailForm #ftrEmailInput {
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    color: #888;
+    float: left;
+    font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 5px;
+    width: 70%;
+    height: 100%;
+}
+
+#ftrEmailForm #ftrEmailInput:hover {
+    border: 1px solid #888;
+}
+
+#ftrEmailForm #ftrEmailInput:focus {
+    border: 1px solid #ef9223;
+    outline: #ef9223 auto 5px;
+}
+
+#ftrEmailForm .button {
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    color: #000;
+    font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FFF;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1e1e1));
+    background: -webkit-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -moz-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -ms-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -o-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: linear-gradient(to bottom, white 0, #e1e1e1 100%);
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+}
+
+#ftrEmailForm .button:hover,
+#ftrEmailForm .button:active {
+    background: black;
+    color: #FFF;
+    outline: none;
+}
+
+
+/* BEGIN SOCIAL STYLES*/
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.footer-social ul:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.footer-social li {
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-lists {
+        width: 100%;
+    }
+    .footer-email {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .footer-social {
+        width: 45%;
+        margin-left: 5%;
+        float: left;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1008px) {
+    .footer-lists {
+        width: 66.6666%;
+        float: left;
+    }
+    .footer-email {
+        width: 33.3333%;
+    }
+    .footer-social {
+        width: 33.3333%;
+        float: right;
+        margin-left: 0;
+    }
+}
+
+.footer-legal {
+    padding: 15px 0 0;
+    clear: left;
+}
+
+.footer-payment {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-legal {
+        width: 66.6666%;
+        float: left;
+    }
+    .footer-payment {
+        width: 33.3333%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1008px) {
+    .footer-payment {
+        text-align: left;
+    }
+}
+
+.footer-payment ul {
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.footer-payment ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+@media only screen and (min-width: 1008px) {
+    .footer-payment ul li.ftr-stella {
+        margin-left: 0;
+    }
+}
+
+.ftr-bbb span,
+.ftr-stella span {
+    background-image: url("http://cache1.artprintimages.com/images/jump_pages/rebrand2/images/subnav2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.ftr-bbb span {
+    background-position: -339px -8px;
+    width: 96px;
+}
+
+.ftr-stella span {
+    background-position: -339px -107px;
+    width: 57px;
 }
 
 
