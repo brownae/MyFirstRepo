@@ -89,7 +89,7 @@
 slider.start();
     </script>
 <!-- Slider and add images END -->
-    
+    <!--Test-->
     <div class="seo">
             
         <h2>Lift Every Voice Foundation</h2>
