@@ -9,30 +9,23 @@
 <!--for img slider start-->
 <link href="css/ideal-image-slider.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/themes/default/default.css">
-<!--for img slider end-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/script.js"></script>
-
-<!-- Remy Sharp Shim --> 
+<!-- Remy Sharp Shim -->
+    <script src="js/html5.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
-<script src="js/html5.js" type="text/javascript"></script>
 <![endif]-->
-
 </head>
 <body>
 <h1>
-    <a href="index.html">
+    <a href="index.php">
         <span>Lift every Voice foundation</span> <!-- for SEO -->
         <img src="images/site-logo.jpg" id="logo-main" alt="Lift Every Voice Foundation Logo" >
     </a>
 </h1>
-
 <img src="images/donate-btn.jpg" id="dnt-btn" alt="Donate button" >
 <div id="search-bx">
     <input type="text" name="search" value="">
     <input type="button" value="search">
 </div><!-- wordpress search box -->
-
 <header>
     <nav>
         <label for="drop" class="toggle">Menu</label>
@@ -45,28 +38,24 @@
                 <a href="#">Projects</a>
                 <input type="checkbox" id="drop-1"/>
                 <ul>
-                    <li><a href="#">Themes and stuff</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">info</a></li>
+                    <li><a href="#">info</a></li>
+                    <li><a href="#">info</a></li>
                 </ul>
-
             </li>
             <li>
-
                 <!-- First Tier Drop Down -->
-                <label for="drop-2" class="toggle">Web Design +</label>
+                <label for="drop-2" class="toggle">info +</label>
                 <a href="#">Get Involved</a>
                 <input type="checkbox" id="drop-2"/>
                 <ul>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Links</a></li>
                     <li>
-
                         <!-- Second Tier Drop Down -->
                         <label for="drop-3" class="toggle">Tutorials +</label>
                         <a href="#">Tutorials</a>
                         <input type="checkbox" id="drop-3"/>
-
                         <ul>
                             <li><a href="#">Community</a></li>
                             <li><a href="#">Public Speaking</a></li>
@@ -80,36 +69,14 @@
         </ul>
     </nav>
 </header>
-<main id="home-page"> 
-    
-<!-- Slider and add images START -->
-    <div id="slider">
-        <a href=''><img src="images/slider-img1.jpg" alt=""></a>
-        <a href=''><img data-src="images/slider-img2.jpg" src="" alt=""></a>
-        <a href=''><img data-src="images/slider-img3.jpg" src="" alt=""></a>
-        <a href=''><img data-src="images/slider-img4.jpg" src="" alt=""></a>
-    </div>
-    <!-- Include slider JS file -->
-    <script src="js/ideal-image-slider.js"></script>
-    <!-- Create your slider -->
-    <script>
-    var slider = new IdealImageSlider.Slider({
-    selector: '#slider',
-    interval: 6000,
-    transitionDuration: 1000
-});
-slider.start();
-    </script>
-<!-- Slider and add images END -->
+<main id="home-page">
     <!--Test-->
     <div class="seo">
-            
         <h2>Lift Every Voice Foundation</h2>
-            
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed diam quis lacus sodales ultrices ut in neque. Nunc dapibus convallis pellentesque. Pellentesque lacinia enim egestas purus eleifend convallis. Aenean congue consequat lectus vitae aliquet. Etiam finibus, nisl ac dignissim rhoncus, odio nisl vestibulum arcu, vitae feugiat arcu est ut augue. In nibh metus, laoreet a enim non, eleifend vehicula velit. Nam a consectetur nibh.</p>
-    
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed diam quis lacus sodales ultrices ut in neque.
+            Nunc dapibus convallis pellentesque. Pellentesque lacinia enim egestas purus eleifend convallis. Aenean congue consequat
+            lectus vitae aliquet. Etiam finibus, nisl ac dignissim rhoncus, odio nisl vestibulum arcu, vitae feugiat arcu est ut augue. In nibh metus, laoreet a enim non, eleifend vehicula velit. Nam a consectetur nibh.</p>
     </div>
-    
     <div id="cta-row">
     <div class="cta" id="cta1">
         <img class="cta-img" src="images/cta-pic1.jpg" alt="">
@@ -118,7 +85,6 @@ slider.start();
         <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
         </div>
     </div>
-    
     <div class="cta" id="cta2">
         <img class="cta-img" src="images/cta-pic2.jpg" alt="">
         <div class="cta-content">
@@ -126,7 +92,6 @@ slider.start();
         <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p></p>
         </div>
     </div>
-    
     <div class="cta" id="cta3">
         <img class="cta-img" src="images/cta-pic3.jpg" alt="">
         <div class="cta-content">
@@ -135,8 +100,8 @@ slider.start();
         </div>
     </div>
     </div>
-    
 </main>
+<!--Footer starts here-->
 <footer>
     <div class="footer-gray">
         <div class="footer-custom">
@@ -144,7 +109,6 @@ slider.start();
                 <div class="footer-list-wrap">
                     <h6 class="ftr-hdr">About</h6>
                     <ul class="ftr-links-sub">
-
                     </ul>
                     <h6 class="ftr-hdr">Projects</h6>
                     <ul class="ftr-links-sub">
@@ -228,7 +192,8 @@ slider.start();
             </div>
             <!--/.footer-social-->
             <div class="footer-legal">
-                <p>&copy; All Rights Reserved. | <a href="/help/privacy-policy.html" rel="nofollow">Privacy Policy</a> | <a href="/help/terms-of-use.html" rel="nofollow">Terms of Use</a> | <a href="" rel="nofollow">Terms of Sale</a></p>
+                <p>&copy; All Rights Reserved. | <a href="" rel="nofollow">Privacy Policy</a> | <a href="" rel="nofollow">Terms of Use</a>
+                    | <a href="" rel="nofollow">Terms of Sale</a></p>
             </div>
         </div>
         <!--/.footer-custom-->
