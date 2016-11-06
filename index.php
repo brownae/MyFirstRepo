@@ -15,6 +15,7 @@
 <![endif]-->
 </head>
 <body>
+
 <h1>
     <a href="index.php">
         <span>Lift every Voice foundation</span> <!-- for SEO -->
@@ -26,7 +27,7 @@
     <input type="text" name="search" value="">
     <input type="button" value="search">
 </div><!-- wordpress search box -->
-<header>
+
     <nav>
         <label for="drop" class="toggle">Menu</label>
         <input type="checkbox" id="drop" />
@@ -49,8 +50,6 @@
                 <a href="#">Get Involved</a>
                 <input type="checkbox" id="drop-2"/>
                 <ul>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Links</a></li>
                     <li>
                         <!-- Second Tier Drop Down -->
                         <label for="drop-3" class="toggle">Tutorials +</label>
@@ -62,13 +61,14 @@
                             <li><a href="#">Other</a></li>
                         </ul>
                     </li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Links</a></li>
                 </ul>
             </li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-</header>
 <main id="home-page">
     <!--Test-->
     <div class="seo">
