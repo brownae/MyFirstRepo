@@ -145,6 +145,7 @@ header h1 {
     line-height: 60px;
     max-width: 100%;
     height: auto;
+    margin: 20px;
 }
 /*----CP starts here --- */
 .toggle,
@@ -172,6 +173,7 @@ nav ul {
     margin:0;
     list-style: none;
     position: relative;
+    z-index: 2;
 }
 /* Positioning the navigation items inline */
 nav ul li {

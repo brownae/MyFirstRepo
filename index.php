@@ -15,7 +15,8 @@
 <![endif]-->
 </head>
 <body>
-
+<!--Header starts here-->    
+<header>
 <h1>
     <a href="index.php">
         <span>Lift every Voice foundation</span> <!-- for SEO -->
@@ -69,7 +70,31 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+</header>
+<!--Header Ends here-->     
 <main id="home-page">
+    
+    <!-- Slider and add images START -->
+    <div id="slider">
+        <a href=''><img src="images/slider-img1.jpg" alt=""></a>
+        <a href=''><img data-src="images/slider-img2.jpg" src="" alt=""></a>
+        <a href=''><img data-src="images/slider-img3.jpg" src="" alt=""></a>
+        <a href=''><img data-src="images/slider-img4.jpg" src="" alt=""></a>
+    </div>
+    <!-- Include slider JS file -->
+    <script src="js/ideal-image-slider.js"></script>
+    <!-- Create your slider -->
+    <script>
+    var slider = new IdealImageSlider.Slider({
+    selector: '#slider',
+    interval: 6000,
+    transitionDuration: 1000
+});
+slider.start();
+    </script>
+<!-- Slider and add images END -->
+    
+    
     <!--Test-->
     <div class="seo">
         <h2>Lift Every Voice Foundation</h2>
@@ -89,14 +114,14 @@
         <img class="cta-img" src="images/cta-pic2.jpg" alt="">
         <div class="cta-content">
         <h3>Headline 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
         </div>
     </div>
     <div class="cta" id="cta3">
         <img class="cta-img" src="images/cta-pic3.jpg" alt="">
         <div class="cta-content">
         <h3>Headline 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit.<a href=""> More...</a></p>
         </div>
     </div>
     </div>
