@@ -37,13 +37,41 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* ----Site wide styles----START */
-body {
-    max-width: 960px;
+
+html {
+    width: 980px;
     margin: auto;
     background: url(images/12_col.gif) center repeat-y;
-    padding: 0 10px;
+    padding: 0 20px;
+    border: 1px solid blue;
+    align-content: center;
+}
+
+body {
+    max-width: 960px;
+    margin: 20px;
     border: 1px solid blue;
 }
+
+main#home-page {
+    width: 100%;
+    padding: 0;
+}
+
+main {
+    width: 61.5%;
+    float: left;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+sidebar {
+    width: 29.5%;
+    float: right;
+    border: 1px solid black;
+    padding: 10px;
+}
+
 /* typography - START */
 h1 a span {
     display: none;
@@ -312,6 +340,10 @@ li > a:only-child:after { content: ''; }
         /* has to be the same number as the "width" of "nav ul ul li" */
     }
 }
+
+
+
+
 @media all and (max-width : 330px) {
     nav ul li {
         display:block;
@@ -341,14 +373,14 @@ div.seo {
 }
 #cta-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 .cta {
     max-width: 300px;
     position: relative;
     width: 100%;
     z-index: 1;
-    margin: 10px;
 }
 .cta img {
     width: 100%;
@@ -366,6 +398,11 @@ div.seo {
     }
 }
 /* ----Home page styles----END */
+
+footer {
+    clear: both;
+}
+
 .footer-gray {
     background-color: #EFEFEF;
     width: 100%;
