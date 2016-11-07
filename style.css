@@ -700,7 +700,7 @@ cursor: pointer;
 }
 
 .inline-svg {
-    display: block;
+    text-align:inherit;
     margin: 0 auto;
 }
 

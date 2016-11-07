@@ -43,7 +43,7 @@
 						c0-0.689,0.5-1.25,1.118-1.25h16.688C20.469,20,20.969,20.561,20.969,21.25L20.969,21.25z">
                     </path>
                     <!-- needs to be here as a 'hit area' -->
-                    <rect width="20" height="220" fill="none">
+                    <rect width="270" height="220" fill="none">
 
                     </rect>
                 </g>
