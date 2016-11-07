@@ -39,7 +39,7 @@ time, mark, audio, video {
 /* ----Site wide styles----START */
 
 html {
-    width: 980px;
+    max-width: 980px;
     margin: auto;
     background: url(images/12_col.gif) center repeat-y;
     padding: 0 20px;
