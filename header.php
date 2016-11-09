@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex, nofollow" />
 <meta name="viewport" content="initial-scale=1"/>
 <link href="style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/nav.css">
 <!--for img slider start-->
 <link href="css/ideal-image-slider.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/themes/default/default.css">
