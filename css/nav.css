@@ -9,8 +9,6 @@ nav {
     padding: 0;
     background-color: #cccccc;
     clear: both;
-    display: flex;
-    justify-content: center;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -108,16 +106,17 @@ li > a:only-child:after { content: ''; }
     }
     /* Styling the toggle lable */
     .toggle {
-        display: block;
-        background-color: #888;
+        display: inline-block;
+        background-color: #fff;
         padding:14px 20px;
         color:#FFF;
         font-size:17px;
         text-decoration:none;
         border:none;
+        float: right;
     }
     .toggle:hover {
-        background-color: #000000;
+        background-color: #fff;
     }
     /* Display Dropdown when clicked on Parent Lable */
     [id^=drop]:checked + ul {
