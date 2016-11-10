@@ -52,15 +52,6 @@
                 <a href="#">Get Involved</a>
                 <input type="checkbox" id="drop-2"/>
                 <ul>
-<<<<<<< HEAD
-=======
-                    <li>
-                        <!-- Second Tier Drop Down -->
-                        <label for="drop-3" class="toggle">Tutorials +</label>
-                        <a href="#">Tutorials</a>
-                        <input type="checkbox" id="drop-3"/>
-                    </li>
->>>>>>> origin/master
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Links</a></li>
                 </ul>
