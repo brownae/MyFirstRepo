@@ -199,7 +199,7 @@ li > a:only-child:after { content: ''; }
 	nav ul ul {
 		float: none;
 		position:static;
-		color: #bababafff;
+		color: #fff;
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
 		
@@ -209,7 +209,7 @@ li > a:only-child:after { content: ''; }
 		display: none;
 	}
 		
-	/* Fisrt Tier Dropdown */
+	/* First Tier Dropdown */
 	nav ul ul li {
 		display: block;
 		width: 100%;
