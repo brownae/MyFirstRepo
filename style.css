@@ -53,17 +53,24 @@ body {
     border: 1px solid blue;
 }
 
+main {
+    width: 61.5%;
+    float: left;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+
 main#home-page {
     width: 100%;
     padding: 0;
 }
 
-main {
-    width: 61.5%;
-    float: left;
-    border: 1px solid black;
-    padding: 20px;
+main#index-2 {
+    text-align: center;
 }
+
+
+
 
 sidebar {
     width: 29.5%;
@@ -76,15 +83,19 @@ sidebar {
 h1 a span {
     display: none;
 }
+
 h2 {
     font-family: Arial;
     font-size: 3em;
     color: #000;
+    margin: 15px 0;
 }
+
 h3 {
     font-family: Arial;
     font-size: 2.25em;
     color: #000;
+    margin: 0;
 }
 h4 {
     font-family: Arial;
@@ -196,6 +207,7 @@ div.seo {
     bottom: 4px;
     background: rgba(113,113,113,0.4);
     padding: 2% 5%;
+    text-align: left;
 }
 #cta-row {
     display: flex;
@@ -204,11 +216,25 @@ div.seo {
 }
 .cta {
     max-width: 300px;
+    min-width: 250px;
     position: relative;
-    width: 100%;
+    width: 44%;
     z-index: 1;
+    display: inline-block; 
 }
-.cta img {
+
+.cta2 {
+    max-width: 300px;
+    min-width: 250px;
+    position: relative;
+    width: 44%;
+    z-index: 1;
+    display: inline-block;
+    margin: 2%;
+}
+
+.cta img,
+.cta2 img{
     width: 100%;
 }
 /* ----Home page styles----END */
@@ -245,6 +271,26 @@ sidebar#primary {
 /* ----pages with sidebars styles----END */
 
 } /*<--END 790px Media query */
+
+@media all and (max-width: 500px) {
+ 
+html {
+    padding: 15px;
+}    
+    
+body {
+    margin: 0;
+}
+    
+main {
+    padding: 0;
+    width: 100%;
+}
+    
+}/*<--END 350px Media query */
+
+
+
 /* Footer styles ----START */
 footer {
     clear: both;
