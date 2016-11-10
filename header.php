@@ -34,7 +34,18 @@
         <label for="drop" class="toggle"><img src="images/hamburger-menu.png"></label>
         <input type="checkbox" id="drop" />
         <ul class="menu">
-            <li><a href="#">About</a></li>
+            <li>
+               <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">About</label>
+                <a href="#">About</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Our Contact Us</a></li>
+                </ul> 
+            </li>
             <li>
                 <!-- First Tier Drop Down -->
                 <label for="drop-1" class="toggle">Projects</label>
@@ -52,8 +63,10 @@
                 <a href="#">Get Involved</a>
                 <input type="checkbox" id="drop-2"/>
                 <ul>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Links</a></li>
+                    <li><a href="#">I am a non-profit</a></li>
+                    <li><a href="#">I am a school</a></li>
+                    <li><a href="#">I am a parent/student</a></li>
+                    <li><a href="#">I would like to donate</a></li>
                 </ul>
             </li>
             <li><a href="#">Blog</a></li>
