@@ -161,6 +161,10 @@ li > a:only-child:after { content: ''; }
 	nav ul li {
 		display: block;
 		width: 100%;
+        margin: 0px;
+        padding: 7px 0;
+        display: inline-block;
+ 
 		}
 
 	nav ul ul .toggle,

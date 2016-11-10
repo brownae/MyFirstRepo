@@ -1,17 +1,17 @@
 <?php include "header.php" ?>    
-
+<div id='wrapper'>
 <main id="page">
     
-    <h1>Test-Drive Your CSS</h1>
-    <h2>How to Use This File</h2>
+  
+    <h2>H2 Test-Drive Your CSS</h2>
     <p>You can test-drive your CSS by viewing the source of this page and copying it into a new HTML file. 
 
     <p>Uncomment the &lt;link&gt; tag in the head, and link this page to your CSS style sheet to test whether your CSS selectors are global. Since the elements on this page are not nested inside your container elements, they will be unstyled if your selectors are overly-specific.</p>
 
     <p>Keep in mind that if your stylesheet uses CSS resets (which it should), once you link this page to your stylesheet the browser-default margins and padding will go away, and you will need to add your own margin and padding values back in if you haven't done so already.</p> 
 
-    <h2>Include a variety of HTML elements</h2>
-    <h3>Nested List 1: ol ul</h3>
+    <h2>H2 Include a variety of HTML elements</h2>
+    <h3>H3 Nested List 1: ol ul</h3>
     <ol>
     <li>List Item 1
         <ul>
@@ -24,7 +24,7 @@
     <li>List Item 3</li>
     </ol>
 
-    <h3>Nested List 2: ul ol</h3>
+    <h3>H3 Nested List 2: ul ol</h3>
     <ul>
     <li>List Item 1
         <ol>
@@ -38,8 +38,8 @@
     </ul>
 
 
-    <h2>Paragraph</h2>
-    <h3>Heading 3</h3>
+    <h2>H2 Paragraph</h2>
+    <h3>H3 Heading 3</h3>
     <p>Your test HTML must have multiple paragraphs, so you can check to see whether you've added margin between them to separate one paragraph from the next. It's also a really good idea to have a mix of lists and paragraphs, as each list (ul, ol, and dl) should have the same margin underneath it as your paragraphs do.</p>
     <p>It's always a good idea to <a href="javascript:;">test your link styles</a>. If a link that's not nested inside a content div or sidebar displays with browser default link styles, it means your link CSS selectors are too specific. Write global link styles first, then override with more specific selectors as needed.</p>
     <p>Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
@@ -100,5 +100,5 @@
     <p>Author, Sept 20 2016</p>
 
 </sidebar>
-
+</div>
 <?php include "footer.php" ?>
