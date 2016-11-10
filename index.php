@@ -18,7 +18,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in orci vitae urna bibendum commodo. Duis congue mauris diam,sed dapibus ex ultrices a. Fusce venenatis <i><a href="">more...</a></i></p>
       </div>
     
-    
+    <div class="postBox">    
+            <img class="left" src="images/thumbnail.jpg" alt="thumbnail">
+          
+            <a href=""><h3>H3 Sample Heading</h3></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in orci vitae urna bibendum commodo. Duis congue mauris diam,sed dapibus ex ultrices a. Fusce venenatis <i><a href="">more...</a></i></p>
+      </div>
     
   
 </main>
