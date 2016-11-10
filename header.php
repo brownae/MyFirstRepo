@@ -75,11 +75,6 @@
                         <label for="drop-3" class="toggle">Tutorials +</label>
                         <a href="#">Tutorials</a>
                         <input type="checkbox" id="drop-3"/>
-                        <ul>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Public Speaking</a></li>
-                            <li><a href="#">Other</a></li>
-                        </ul>
                     </li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Links</a></li>
