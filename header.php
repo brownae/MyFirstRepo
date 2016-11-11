@@ -8,8 +8,8 @@
 <link href="style.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/nav.css"/>
 <!--for img slider start-->
-<link href="css/ideal-image-slider.css" rel="stylesheet"/>
-<link rel="stylesheet" href="css/themes/default/default.css">
+<link rel="stylesheet" href="css/img-slider/ideal-image-slider.css"/>
+<link rel="stylesheet" href="css/img-slider/default.css">
 <!-- Remy Sharp Shim -->
     <script src="js/html5.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
